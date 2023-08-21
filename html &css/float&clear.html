@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float&clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            font-family: 'Ubuntu', sans-serif;
+           }
+        p{
+            color: white;
+        }
+        .container{
+            width:  1000px;
+            border: 23px solid rgb(117, 163, 172);
+            margin: 34px auto;
+                  }
+         .item{
+             border: 12px solid rgb(29, 21, 21); 
+             margin: 55px;
+             padding: 55px;
+             background-color: rgb(80, 55, 83);
+             } 
+             #fruit{
+                 float: right;
+                 width: 35%;
+                 }
+             #computer{
+                float: left;
+                width: 35%;
+
+             }
+             #groceries{ 
+                 width: 70%;
+                 clear: left;
+
+             }
+             
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class=" item">
+            <h3> 
+                fruit
+            </h3>
+            <p id="fruitpara" class="para"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a alias architecto, 
+                et molestias voluptates dolor voluptas officia dignissimos, doloribus quibusdam illo cum?
+            </p>
+        </div>
+        <div id="computer" class=" item">
+            <h3> 
+                computer
+            </h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a alias architecto, 
+                et molestias voluptates dolor voluptas officia dignissimos, doloribus quibusdam illo cum?
+            </p>
+        </div>
+        <div id="groceries" class="item">
+            <h3> 
+                groceries
+            </h3>
+            <p id="grocieries" class="para"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a alias architecto, 
+                et molestias voluptates dolor voluptas officia dignissimos, doloribus quibusdam illo cum?
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

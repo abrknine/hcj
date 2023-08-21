@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js dates</title>
+</head>
+<style>
+  .container{
+      background-color: orange;
+      border: 2px solid black;
+      margin: 5px;
+      padding: 23px 150px;
+      align-items: center;
+  }
+
+</style>
+
+<body>
+    <div class="container">
+       Current time is <span id="time"></span>
+
+    </div>
+
+
+
+    <script>
+        console.log("This is js time tutuorial");
+        let now = new Date();
+        console.log(now);
+        let dt = new Date(0);   // reference time now keep increasing argument
+        //   from 0 so reference time keep increasing
+        console.log(dt);
+
+        // let newdata=new Date("2029-09-30");
+        // console.log(newdata);
+        // let newdata=new Date(year, month , date, hours, minute, second, milliseconds);
+        let newdate = new Date(2039, 4, 23, 4, 45, 23, 34);
+        console.log(newdate);
+        // below fuction are fetching  about newdatas values or getdate
+        let yr = newdate.getFullYear();
+        console.log(yr);
+        let dat = newdate.getDate();
+        console.log(dat);
+        let month = newdate.getMonth();
+        console.log(month);
+        let hours = newdate.getHours();
+        console.log(hours);
+        let day = newdate.getDay();
+        console.log(day);
+
+        //  chage or set time
+        newdate.setDate(5);
+        // console.log(newdate);
+        newdate.setMinutes(29);
+        console.log(newdate);
+
+
+        //  let a=  date.now(); // this function gives milisecond just now;
+     setInterval(clock, 1000);
+    function clock(){
+        time.innerHTML= new Date(); 
+    }
+
+    </script>
+</body>
+
+</html>

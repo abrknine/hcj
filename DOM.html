@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+     <!-- manupulating html(dom) using js*/ -->
+     <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About us</li>
+            <li>Contact us</li>
+        </ul>
+     </div>
+     <div class="container">
+        Another container 
+     </div>
+     <script>
+        let main= document.getElementById('main');
+        console.log(main);
+       let  nav= document.getElementById('nav');
+       console.log(nav);
+        
+      let container = document.getElementsByClassName('container');
+      console.log(container);
+    //    u can iterate class like array container[0], container[1] etc
+     
+
+    //  let sel=document.querySelector('.container');// u can use all selectors in css
+    // console.log("Selector returns", sel);
+
+     let sel=document.querySelectorAll('.nav>li');// u can use all selectors in css   nav ke ander li me changes kar sakte hai 
+    console.log("Selector returns", sel);
+
+
+
+     </script>
+    
+</body>
+</html>

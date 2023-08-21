@@ -1,0 +1,21 @@
+
+/* element selector */
+p{
+    border:2px solid red;
+}
+
+
+/* id selectors */
+#second {
+    color: red;
+}
+/* class selectors */
+.redmind{
+    color: yellow;
+    background-color:  blue;
+}
+/* grouping slectors */
+footer,span{
+    background-color: pink;
+}
+

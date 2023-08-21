@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in js</title>
+</head>
+<body>
+     <div class="container">
+        this is about loops
+     </div>
+
+
+    <script>
+  console.log("this is loops tut");
+  let i=0;
+  //for loop
+  for(i=0; i<3; i++){      // same as in c++
+    console.log(i);
+  }
+ 
+  let friends=["Rohan", "Rahul", "Abhi","utkarsh"];
+   /*  let n= friends.length;
+     for( let i=0; i<n; i++){
+        console.log( "Hello friends" + " " +friends[i]);
+     }*/
+
+    // for each alternate of  for loop
+    //  friends.forEach(function f(element){
+    //    console.log("Hello Friend"+ element+ " to mordern javascript")
+        
+    //  });
+    //for of loop
+     for(element of friends){
+      console.log("Hello Friend"+ element+ " to mordern javascript");
+     }
+
+  //  To iterate object using forin loop
+     let employee={
+     name: "abhi",
+     salary: 200000,
+     channel: "cwa"
+     }
+ for(key in employee){
+  console.log(`The ${key} of employee is ${employee[key]}`)
+ }
+
+//  while loop in js
+ let j =34;
+  // while(j<4){
+  //   console.log(`${j} is less thsn 4`)
+  //   j++;
+  // }
+      // do while loop
+     
+      do{
+    console.log(`${j} is less than 4 but we are inside loop`)
+    j++;
+  }while(j<4);
+     
+
+
+
+
+    </script>
+</body>
+</html>

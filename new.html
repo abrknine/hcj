@@ -1,0 +1,51 @@
+ 
+<!-- using MDN doc for learning js instead official -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new keyword</title>
+</head>
+<body>
+    <div class="container">
+       here we styuding something combination of object and function
+    </div>
+
+
+    <script>
+        // this is template or function or object u can say
+            var user = function(firstname , courseCount){
+                 this.firstname=firstname;
+                 this.courseCount=courseCount;
+                 this.getcourseCount=function(){
+                        console.log(`course count is: ${this.courseCount}`);
+                 };
+            };
+            // adding elements inside objector template using proto
+            user.prototype.getfirstname=function(){
+                console.log(`your firstname is ${this.firstname}`);
+            }
+             
+        //  this is like calling function or using about template
+        // always use new keyword while using template otherwise it wont work
+            var hitesh = new user("hitesh",2);
+            // console.log(hitesh);
+            hitesh.getcourseCount();
+         if(hitesh.hasOwnProperty("firstname")){  // here i put this condition to keep code better and more reliable
+            hitesh.getfirstname();
+        }
+        // in javascript we have alot of propery which we can use to get max of an template or object u can say one of them i just used above which is hasOwnProperty
+            var sam= new user("sam",1);
+            sam.getcourseCount(); 
+            sam.getfirstname();
+            // console.log(sam);
+
+            
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> display property </title>
+  <style>
+    *{                               /* display property just make site responsive */
+      box-sizing: border-box;
+    }
+    header {
+      margin: auto;
+      border: 2px solid red;
+      width: 1200px; 
+    }
+    img {
+      width: 150px;
+      border-radius: 13px;
+      margin: auto;
+      display: block; 
+      /* display block ka mtlb ham us element
+         ko pura select kar lete hai 
+        phir ham uspe margin,width,align-text set kar sakte hai*/
+      /* dispaly online me bs jitna element ka space
+        hai utna hi selct hota hai*/
+    }
+
+    h3 {
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 0px;
+    }
+
+  .box{
+    background-color: bisque;
+    border: 5px solid red;
+    margin: 13px;
+    padding: 23px;
+    width: 30%;
+    display: inline-block; /*element jinta hi space leke bhi uski width set 
+                           kar sakta hai isse upper dekh ispe width lagai hai tune*/ 
+    box-sizing: border-box;/* isse jo width hogi content 
+                              ki usi mehi border and padding include hoga*/
+  } 
+  .container{
+    margin: auto;
+    width: 1200px;
+  }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <img src="utv.jpg" alt=" nothin">
+    <h3>Here u can kill ur sins</h3>
+</header>
+<div class="container">
+ <div class="box">
+   <h4 class="heading">Heading</h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+     . Aliquid consequatur voluptatem earum laudantium, nesciunt repellat omnis possimus officiis dolorem non qui rerum velit! Aut deserunt 
+     voluptas nihil eius sed ipsam similique omnis voluptatibus ea.</p>
+ </div>
+ <div class="box">
+   <h4 class="heading"> Heading</h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+     . Aliquid consequatur voluptatem earum laudantium, nesciunt repellat omnis possimus officiis dolorem non qui rerum velit! Aut deserunt 
+     voluptas nihil eius sed ipsam similique omnis voluptatibus ea.</p>
+ </div>
+ <div class="box">
+   <h4 class="heading"> Heading</h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+     . Aliquid consequatur voluptatem earum laudantium, nesciunt repellat omnis possimus officiis dolorem non qui rerum velit! Aut deserunt 
+     voluptas nihil eius sed ipsam similique omnis voluptatibus ea.</p>
+ </div>
+</div>
+</body>
+
+</html>

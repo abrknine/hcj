@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araay and objects</title>
+</head>
+<body>
+    <div class="container">This is simple text</div>
+    
+
+    <script>
+         let myVar=34;
+         let var2='string';
+         let var3= true;
+         let var4=null;
+         let  var5=undefined;
+    //    creating objects in js (datatype other than primitive datatype)
+         let employee ={
+            name: "harry",
+            salary:10,
+            channel1: "codewithharry",
+            channel2:"programwithharry",
+            //  key      key ki value
+         }
+         console.log(employee);
+        //  acCesing object values using thier key 
+            console.log(employee.name);
+            console.log(employee.salary);
+            // another n effective way
+            console.log(employee['channel2'])
+
+
+         
+        
+
+
+
+
+
+
+
+
+         //araay in js it is kind of object
+        //  let name=[1,2,4,"harry",undefined];
+        // other method creating araay
+         let name= new Array(2,1,4,"harry",undefined);
+         console.log(name);
+         console.log(name[1]);
+         console.log(name[2]); 
+        //  length of array 
+         console.log(name.length);
+         name = name.sort();
+         name.push("this is pushed");
+         console.log(name);
+
+
+    //   23 size ka array
+         let names=new array(23);
+         
+
+
+
+
+    </script>
+</body>
+</html>

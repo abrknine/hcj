@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and condition</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+    </ul>
+</div>
+
+
+     <script>
+    var string1='This is string'; 
+    var string1='This is string2';
+    console.log(string1);
+        // let a='hi';                                 
+        console.log(a);
+        {
+            let a='hi2';
+            console.log(a);
+        }
+      // use 'let' instead of 'var' from now  it declare variable same type as
+       // in c++ so if u redeclare variable it gives 
+         //error in let but no error in  case of var
+         
+       const a="This can not be change";
+      /// a=" i want this";   this cant be done to const
+       console.log(a);
+     
+
+    //    conditions
+      let age=34;
+      if(age>18){
+        console.log("you can drink alcohol")
+      }
+      else if(age===2){
+        console.log( "your age is 2");
+      }
+      else if(age==5){
+        console.log("your age is 5");
+      }
+      else{
+        console.log("you can drink water");
+      }
+    //   switch case
+        const cup=45;
+        switch (cup) {
+            case 4:
+                 console.log('this is 4');
+                break;
+            case 41:
+            console.log('this is 41');
+                break;
+            case 42:
+            console.log('this is 42');
+                break;
+            case 43:
+            console.log('this is 43');
+                break;
+        
+            default:
+            console.log('this is none of 4,41,42,43');
+                break;
+        }
+    
+
+     </script>
+</body>
+</html>

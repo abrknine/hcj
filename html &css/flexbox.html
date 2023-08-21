@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            width: 1500px;
+            height: 1500px;
+            border: 5px solid black;
+            display: flex;
+            /*  Properties of flexbox */
+
+              flex-direction: row;/*row is by default*/
+            /* flex-direction: column;
+              flex-direction:  row-reverse;
+              flex-direction: column-reverse;*/
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row-reverse wrap;*/ /*this is shorthed 2 property 1 hi element se */
+               
+            /* justify content justify content in horizontal direction  */
+                  /* justify-content: center; */
+               /* justify-content: space-between; *//* put equal spaces btw boxes  */
+               /* justify-content: space-evenly; *//* put equal spaces btw boxes and margin  */
+               /* justify-content: space-around; *//* put equal spaces arround each box left side of box and right side of box  */
+          
+               /* align items justify content in vertical direction  */
+               /* align-items: center; */
+               /* align-items: flex-end; */
+               /* align-items: flex-start; by default  */
+               /* align-items: stretch; */
+        } 
+        .box{
+            border: 2px solid rgb(192, 124, 124);
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+           padding: 5px;
+           background-color: aliceblue;
+            
+        }
+
+        #box1{
+        
+               /* flex properties for boxes */
+               /* order: 3;  */
+              
+
+        }
+        
+        #box2{
+          /* order: 2; */
+          /* flex-grow:3 ;    responsive design me container ko bada karte wakt jiske grow ki value jyada hogi uska flexbox bada ho jaega  */
+          /* flex-shrink: 3;  reponsive design me shrik karte wakt jiske shrink ki value jyada hogi vo flexbox jyada shrink hoga */
+             flex-basis: 113px; /* to change default size of boxes */
+           /* when flex directionis set to row (which is by default ) will control width */
+           /* when flex direction is set to coloumn will control hieght */
+
+        }
+        #box3{
+          /* shorthead */
+          flex: 2 2 190px;/* grow ,shrink ,basis */
+          /* align-self: center; */
+          align-self: flex-start;
+          /* align-self: flex-end; */
+
+
+          
+        
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is Flex box</h3>
+    <div class="container">
+    <div class="box" id="box1">First </div>
+    <div class="box" id="box2">Second</div>
+    <div class="box" id="box3">Third</div>
+    <!-- <div class="box" id="box4">Fourth</div> -->
+    <!-- <div class="box" id="box5">Fifth</div> -->
+    <!-- <div class="box" id="box6">Sixth</div> -->
+    </div>
+</body>
+</html>

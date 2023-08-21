@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout & cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+         Time now is <span id="time"></span>
+    </div>
+    <script>
+        // console.log("tut of settime");
+        // setTinmeout allows us to run function once after the interval of time
+        // setinterval allow us to run function repeatedly after the interval of time
+
+        function greet(name , byetext){
+            console.log("hello good morning" +" "+ name + " "+ byetext);
+
+        } 
+        // setTimeout(greet, 5000, 'Abhi',"Takecare"); //5 sec baad greet function call kar do
+    //     setTimeout(greet(), 2000);wrong syntax u cant call function inside settimeout 
+    //     timeout=setTimeout(greet, 5000, 'Abhi',"Takecare");
+    //    console.log(timeout);
+    //    clearTimeout(timeout);   so set timeout return an id that we store in timeout and then we pass this id in cleartimeout so settimeout wont apply anymore
+     
+    // setInterval(greet, 2000 ,"Abhi","GoodBye");
+    // intervalid= setInterval(greet, 2000 ,"Abhi","GoodBye");
+    // clearInterval(intervalid); //to clear setinterval
+    
+    function displayTime(){
+        time=new Date();
+        console.log(time); 
+        document.getElementById('time').innerHTML=time;
+    }
+
+             setInterval(displayTime ,1000);
+    </script>
+</body>
+</html>

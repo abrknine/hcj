@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects from mds (another ways of making function) </title>
+</head>
+<body>
+    <!-- this tut is just to tell that objectsw can be  created in diff ways too -->
+    <div class="contianer">
+        i am boss
+    </div>
+    <script>
+    //  creating objects in diff way than previous
+         var user={
+            name:"",
+            getUserName: function(){
+                console.log(`user name is :${this.name}`);
+            }
+         }
+
+
+         var abhishek =Object.create(user);
+         console.log(abhishek);
+         abhishek.name="abhishek bahukhandi";
+         abhishek.getUserName();
+                //  or we can do
+         var sam= Object.create(user,{
+            name:{value:"sammy"}
+            // coursecount:{value:3},
+            }
+         ) ;  
+         sam.getUserName();
+
+
+
+
+    </script>
+</body>
+</html>
